@@ -1,7 +1,12 @@
 {
   "version": 1,
-  "updated": "2026-08-22",
+  "updated": "2026-08-25",
   "stations": [
+    {
+      "name": "Asterisk Radio",
+      "tuneInId": "s188877",
+      "description": "Classic Rock — Zero Commercials"
+    },
     {
       "name": "Rádio 93 FM",
       "streamUrl": "https://www.radios.com.br/play/playlist/106/listen-radio.pls",
