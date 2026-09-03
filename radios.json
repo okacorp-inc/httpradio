@@ -28,6 +28,11 @@
       "description": "Música gaúcha e nativista"
     },
     {
+      "name": "Rádio Bem Gaúcho",
+      "streamUrl": "https://www.radios.com.br/play/playlist/204433/listen-radio.pls",
+      "description": "Música gaúcha e nativista 24h"
+    },
+    {
       "name": "Studio Souto Sertanejo",
       "streamUrl": "https://www.radios.com.br/play/playlist/38848/listen-radio.pls",
       "description": "Sertanejo universitário"
