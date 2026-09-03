@@ -6,19 +6,22 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: read
-  issues: write
+  contents: write            # para publicar radios-status.json de volta no repo
+  issues: write              # para abrir/fechar a issue de rádios fora do ar
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Instalar dependências
         run: pip install requests
+
       - name: Verificar streams
         id: check
         run: |
@@ -26,6 +29,20 @@ jobs:
           python tools/check_radios.py radios.json
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
           set -e
+
+      - name: Publicar radios-status.json (app lê isto)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add radios-status.json
+          if git diff --cached --quiet; then
+            echo "Sem mudanca de status."
+          else
+            git commit -m "Atualiza status das radios [skip ci]"
+            git push
+          fi
+
       - name: Abrir issue se houver rádio fora do ar
         if: steps.check.outputs.exit_code != '0'
         env:
@@ -35,7 +52,9 @@ jobs:
           for n in $(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[].number'); do
             gh issue close "$n" >/dev/null
           done
-          gh issue create --title "$TITLE" --body-file radios-report.md --assignee "${{ github.repository_owner }}"
+          gh issue create --title "$TITLE" --body-file radios-report.md \
+            --assignee "${{ github.repository_owner }}"
+
       - name: Fechar issue se tudo voltou ao ar
         if: steps.check.outputs.exit_code == '0'
         env:
@@ -43,9 +62,10 @@ jobs:
         run: |
           TITLE="Rádios fora do ar (verificação automática)"
           for n in $(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[].number'); do
-            gh issue comment "$n" --body "✅ Todas responderam na última verificação — fechando." >/dev/null
+            gh issue comment "$n" --body "Todas responderam na ultima verificacao - fechando." >/dev/null
             gh issue close "$n" >/dev/null
           done
+
       - name: Publicar relatório como artefato
         if: always()
         uses: actions/upload-artifact@v4
