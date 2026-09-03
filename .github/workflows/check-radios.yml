@@ -1,0 +1,54 @@
+name: Verificar rádios
+
+on:
+  schedule:
+    - cron: "0 9,21 * * *"   # 06:00 e 18:00 de Brasília (UTC-3)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependências
+        run: pip install requests
+      - name: Verificar streams
+        id: check
+        run: |
+          set +e
+          python tools/check_radios.py radios.json
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+      - name: Abrir issue se houver rádio fora do ar
+        if: steps.check.outputs.exit_code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Rádios fora do ar (verificação automática)"
+          for n in $(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[].number'); do
+            gh issue close "$n" >/dev/null
+          done
+          gh issue create --title "$TITLE" --body-file radios-report.md --assignee "${{ github.repository_owner }}"
+      - name: Fechar issue se tudo voltou ao ar
+        if: steps.check.outputs.exit_code == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Rádios fora do ar (verificação automática)"
+          for n in $(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[].number'); do
+            gh issue comment "$n" --body "✅ Todas responderam na última verificação — fechando." >/dev/null
+            gh issue close "$n" >/dev/null
+          done
+      - name: Publicar relatório como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radios-report
+          path: radios-report.md
