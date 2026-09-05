@@ -8,6 +8,11 @@
       "description": "Classic Rock — Zero Commercials"
     },
     {
+      "name": "Radio Rock On",
+      "tuneInId": "s240030",
+      "description": "Classic rock 24h (Los Angeles)"
+    },
+    {
       "name": "Rádio 93 FM",
       "streamUrl": "https://www.radios.com.br/play/playlist/106/listen-radio.pls",
       "description": "Gospel contemporâneo (RJ)"
@@ -31,6 +36,16 @@
       "name": "Rádio 90 FM Blumenau",
       "streamUrl": "https://www.radios.com.br/play/playlist/87/listen-radio.pls",
       "description": "Flashback e lite hits (Blumenau, SC)"
+    },
+    {
+      "name": "FURB FM",
+      "streamUrl": "https://www.radios.com.br/play/playlist/13270/listen-radio.pls",
+      "description": "Universitária eclética (Blumenau, SC)"
+    },
+    {
+      "name": "UDESC FM",
+      "streamUrl": "https://www.radios.com.br/play/playlist/13037/listen-radio.pls",
+      "description": "Universitária — MPB e alternativo (Florianópolis, SC)"
     },
     {
       "name": "Rádio Pátria Gaúcha",
