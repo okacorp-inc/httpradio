@@ -1,110 +1,110 @@
 {
-  "updated": "2026-09-04T21:10:13+00:00",
+  "updated": "2026-09-05T09:10:19+00:00",
   "stations": {
     "https://www.radios.com.br/play/playlist/106/listen-radio.pls": {
       "name": "Rádio 93 FM",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/13848/listen-radio.pls": {
       "name": "Rádio Melodia",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/14120/listen-radio.pls": {
       "name": "NovaBrasil FM",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/18760/listen-radio.pls": {
       "name": "Rádio Pátria Gaúcha",
       "status": "DOWN",
       "since": "2026-09-03",
-      "daysDown": 1,
-      "lastChecked": "2026-09-04"
+      "daysDown": 2,
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/204433/listen-radio.pls": {
       "name": "Rádio Bem Gaúcho",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/38848/listen-radio.pls": {
       "name": "Studio Souto Sertanejo",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/16401/listen-radio.pls": {
       "name": "Rádio Sertaneja Raiz",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://somafm.com/metal.pls": {
       "name": "SomaFM Metal Detector",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/37105/listen-radio.pls": {
       "name": "Heavy Metal Ears",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://somafm.com/bootliquor.pls": {
       "name": "SomaFM Boot Liquor",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://stream.nightride.fm/nightride.mp3": {
       "name": "Nightride FM",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "http://stream.radioparadise.com/rock-320": {
       "name": "Radio Paradise — Rock Mix",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/55371/listen-radio.pls": {
       "name": "Rádio MAXXTRO",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://www.radios.com.br/play/playlist/31289/listen-radio.pls": {
       "name": "89 FM A Rádio Rock",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     },
     "https://somafm.com/covers.pls": {
       "name": "SomaFM Covers",
       "status": "OK",
       "since": null,
       "daysDown": 0,
-      "lastChecked": "2026-09-04"
+      "lastChecked": "2026-09-05"
     }
   }
 }
