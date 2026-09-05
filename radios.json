@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-25",
+  "updated": "2026-09-05",
   "stations": [
     {
       "name": "Asterisk Radio",
@@ -21,6 +21,11 @@
       "name": "NovaBrasil FM",
       "streamUrl": "https://www.radios.com.br/play/playlist/14120/listen-radio.pls",
       "description": "MPB e música brasileira"
+    },
+    {
+      "name": "Itapema FM",
+      "streamUrl": "https://www.radios.com.br/play/playlist/13481/listen-radio.pls",
+      "description": "MPB e adulto contemporâneo (SC)"
     },
     {
       "name": "Rádio Pátria Gaúcha",
