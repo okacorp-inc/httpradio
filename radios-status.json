@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T09:10:19+00:00",
+  "updated": "2026-09-05T21:10:12+00:00",
   "stations": {
     "https://www.radios.com.br/play/playlist/106/listen-radio.pls": {
       "name": "Rádio 93 FM",
@@ -17,6 +17,34 @@
     },
     "https://www.radios.com.br/play/playlist/14120/listen-radio.pls": {
       "name": "NovaBrasil FM",
+      "status": "OK",
+      "since": null,
+      "daysDown": 0,
+      "lastChecked": "2026-09-05"
+    },
+    "https://www.radios.com.br/play/playlist/13481/listen-radio.pls": {
+      "name": "Itapema FM",
+      "status": "OK",
+      "since": null,
+      "daysDown": 0,
+      "lastChecked": "2026-09-05"
+    },
+    "https://www.radios.com.br/play/playlist/87/listen-radio.pls": {
+      "name": "Rádio 90 FM Blumenau",
+      "status": "OK",
+      "since": null,
+      "daysDown": 0,
+      "lastChecked": "2026-09-05"
+    },
+    "https://www.radios.com.br/play/playlist/13270/listen-radio.pls": {
+      "name": "FURB FM",
+      "status": "OK",
+      "since": null,
+      "daysDown": 0,
+      "lastChecked": "2026-09-05"
+    },
+    "https://www.radios.com.br/play/playlist/13037/listen-radio.pls": {
+      "name": "UDESC FM",
       "status": "OK",
       "since": null,
       "daysDown": 0,
@@ -101,6 +129,13 @@
     },
     "https://somafm.com/covers.pls": {
       "name": "SomaFM Covers",
+      "status": "OK",
+      "since": null,
+      "daysDown": 0,
+      "lastChecked": "2026-09-05"
+    },
+    "https://radio.postrocknation.com/public/radio/playlist.pls": {
+      "name": "Post-Rock Nation",
       "status": "OK",
       "since": null,
       "daysDown": 0,
