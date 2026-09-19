@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-05",
+  "updated": "2026-09-19",
   "stations": [
     {
       "name": "Asterisk Radio",
@@ -111,6 +111,21 @@
       "name": "Post-Rock Nation",
       "streamUrl": "https://radio.postrocknation.com/public/radio/playlist.pls",
       "description": "Post-rock instrumental e atmosférico 24h"
+    },
+    {
+      "name": "Retrowave.One",
+      "streamUrl": "https://waveretro.ru:8443/stream",
+      "description": "Synthwave e retrowave 24h"
+    },
+    {
+      "name": "GothVille Radio",
+      "streamUrl": "https://streams.radio.co/s62583474c/listen",
+      "description": "Darkwave, goth e post-punk (Bélgica)"
+    },
+    {
+      "name": "Rainwave Game Music",
+      "tuneInId": "s158323",
+      "description": "Trilhas de videogame e remixes"
     }
   ]
 }
