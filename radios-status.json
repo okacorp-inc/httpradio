@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T13:00:04+00:00",
+  "updated": "2026-10-18T22:48:36+00:00",
   "stations": {
     "http://stream.radioparadise.com/rock-320": {
       "name": "Radio Paradise — Rock Mix",
@@ -52,8 +52,8 @@
     },
     "https://waveretro.ru:8443/stream": {
       "name": "Retrowave.One",
-      "status": "CHECK",
-      "since": null,
+      "status": "DOWN",
+      "since": "2026-10-18",
       "daysDown": 0,
       "lastChecked": "2026-10-18"
     },
