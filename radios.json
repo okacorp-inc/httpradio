@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-19",
+  "updated": "2026-10-18",
   "stations": [
     {
       "name": "Asterisk Radio",
@@ -13,9 +13,19 @@
       "description": "Classic rock 24h (Los Angeles)"
     },
     {
+      "name": "iROCK109",
+      "streamUrl": "https://streaming.live365.com/a05963",
+      "description": "Classic rock 70s–90s (EUA)"
+    },
+    {
       "name": "Radio Paradise — Rock Mix",
       "streamUrl": "http://stream.radioparadise.com/rock-320",
       "description": "Pop e classic rock"
+    },
+    {
+      "name": "Antena 1",
+      "streamUrl": "https://www.radios.com.br/play/playlist/9505/listen-radio.pls",
+      "description": "Soft rock e clássicos internacionais (SP)"
     },
     {
       "name": "89 FM A Rádio Rock",
