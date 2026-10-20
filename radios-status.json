@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T00:07:17+00:00",
+  "updated": "2026-10-20T14:08:19+00:00",
   "stations": {
     "https://streaming.live365.com/a05963": {
       "name": "iROCK109",
@@ -73,8 +73,8 @@
     },
     "https://streams.radio.co/s62583474c/listen": {
       "name": "GothVille Radio",
-      "status": "OK",
-      "since": null,
+      "status": "DOWN",
+      "since": "2026-10-20",
       "daysDown": 0,
       "lastChecked": "2026-10-20"
     },
