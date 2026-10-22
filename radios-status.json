@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T14:23:03+00:00",
+  "updated": "2026-10-22T23:53:50+00:00",
   "stations": {
     "https://streaming.live365.com/a05963": {
       "name": "iROCK109",
@@ -143,8 +143,8 @@
     },
     "https://www.radios.com.br/play/playlist/16401/listen-radio.pls": {
       "name": "Rádio Sertaneja Raiz",
-      "status": "DOWN",
-      "since": "2026-10-22",
+      "status": "OK",
+      "since": null,
       "daysDown": 0,
       "lastChecked": "2026-10-22"
     },
