@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T15:05:27+00:00",
+  "updated": "2026-10-31T23:57:42+00:00",
   "stations": {
     "https://streaming.live365.com/a05963": {
       "name": "iROCK109",
@@ -66,8 +66,8 @@
     },
     "https://waveretro.ru:8443/stream": {
       "name": "Retrowave.One",
-      "status": "CHECK",
-      "since": null,
+      "status": "DOWN",
+      "since": "2026-10-31",
       "daysDown": 0,
       "lastChecked": "2026-10-31"
     },
